@@ -9,13 +9,16 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route exact path='/' Component={Home}> Home </Route>
-        <Route path='/about' Component={About}> About </Route>
-        <Route path='/users' Component={Users}> Users </Route>
-        
-        <Link to='/'> Home </Link>
-        <Link to='/about'> About </Link>
-        <Link to='/users'> Users </Link>
+        <div>
+          <Link to='/'> Home </Link>
+          <Link to='/about'> About </Link>
+          <Link to='/users'> Users </Link>
+        </div>
+        <div>
+          <Route exact path='/' Component={Home}> Home </Route>
+          <Route path='/about' Component={About}> About </Route>
+          <Route path='/users' Component={Users}> Users </Route>
+        </div>
       </BrowserRouter>
     );
   }
