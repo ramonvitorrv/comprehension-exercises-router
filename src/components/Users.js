@@ -6,7 +6,7 @@ class Users extends Component {
     const { id } = this.props.match.params
     return (
       <div>
-        <h2>Users</h2>
+        <h2> Users </h2>
         <p> { greetingsMessage }, {id} My awesome Users component </p>
       </div>
     );

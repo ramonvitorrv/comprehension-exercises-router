@@ -18,7 +18,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' Component={Home}> <Home /> </Route>
             <Route path='/about' Component={About}> <About /> </Route>
-            <Route path='/Users/:id' render={(props) => <Users {...props} greetingsMessage='Good Morning' /> }></Route>
+            <Route path='/Users/:id' render={(routeProps) => <Users {...routeProps} greetingsMessage='Good Morning' /> }></Route>
           </Switch>
         </div>
       </BrowserRouter>
