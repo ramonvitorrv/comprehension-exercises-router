@@ -13,6 +13,7 @@ class App extends Component {
           <Link to='/'> Home </Link>
           <Link to='/about'> About </Link>
           <Link to='/users'> Users </Link>
+          <Link to='/strict-access'> Strict Acess </Link>
         </div>
         <div>
           <Switch>
